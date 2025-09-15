@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário simples</h1>
+    <form action="Cadastro.php" method="post">
+        <p><label for="inome"> Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome"> Sobrenome:</label>
+            <input type="text" name="Sobrename" id="isobrenome">
+        </p>
+
+        <p>
+        <input type="submit" value="Criar conta" id="">
+        </p>
+        
+
+
+
+
+
+    </form>
+
+
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="inome" method="post">
+    <p><label for="inomes"> Nome:</label>
+        <input type="text" name="nome" id="inomes">
+    </p>
+    <p><label for="iemail">Email</label>
+        <input type="email" name="email" id="iemail">
+    </p>
+    <p><label for="isenha">Senha</label>
+        <input type="password" name="senha" id="isenha">
+    </p>
+    <!--Botão de opção(Radio), só permite marcar 1=Só permite marcar uma opção-->
+    <p> Time:
+        <input type="radio" name="São Paulo" id="iSãoPaulo">
+        <label for="iSãoPaulo">São Paulo</label>
+        <input type="radio" name="Corinthians" id="iCorinthians">
+        <label for="iCorinthians">Corinthians</label>
+        <input type="radio" name="Flamengo" id="iFlamengo">
+        <label for="iFlamengo">Flamengo</label>
+        <input type="radio" name="Palmeiras" id="iPalmeiras">
+        <label for="iPalmeiras">Palmeiras</label>
+
+
+    </p>
+    <p>
+        <input type="checkbox" name="" id="">
+        <select name="" id="">
+            <option value="">Corinthians</option>
+            <option value="">Brasil</option>
+        </select>
+        <textarea name="" id="" cols="30 rows="10"></textarea>
+    </p>
+
+
+
+
+
+
+
+
+
+    <input type="submit" value="Criar conta" id="">
+        
+
+    </form>
+</body>
+</html>

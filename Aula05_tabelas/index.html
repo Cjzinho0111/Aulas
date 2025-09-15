@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Construindo uma tabela</h1>
+    <!--
+        Table = Tabela
+        Table Row = Linha de tabela
+        Table Data = Dado da célula
+    -->
+<!--ALT+SHIF+f, organiza tudo que estiver bagunçado-->
+<!--Table= tabela-->
+<!--Tr=Linha de Tabela-->
+<!--TD= Dado da célula-->
+
+    <table border="10" width="50%">
+        <tr>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Gosto Musical</td>
+
+        </tr>
+        <tr>
+            <td>Cauã</td>
+            <td>Rodrigues</td>
+            <td>HipHop</td>
+        </tr>
+
+        <tr>
+            <td>Guilherme</td>
+            <td>Almeida</td>
+            <td>BommBap</td>
+        </tr>
+        <td>Guilherme</td>
+        <td>Falcão</td>
+        <td>Depende do dia</td>
+    
+        </tr>
+    </table>
+    
+
+    <p>Separando Tabela</p>
+
+     <!-- Cabeçalho, conteúdo e rodapé
+        Table
+            Caption=TÍTULO DA TABELA
+            Thead
+                TR,TH,TD
+            TBODY
+                TR,TH,TD
+            TFOOT
+                TR,TH,TD
+
+                Mesclar coluna = colspan
+                Mesclar linha = rowspan
+     -->
+
+    <table border="10" width="50%">
+        <caption>Dinheiro poupado em 2026</caption>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Dinheiro</th>
+                <th>Mesclando Células</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$350</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$200</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+                
+                <td colspan="2">Mesclando</td>
+
+            </tr>
+            <!--Mesclando colona= colspan-->
+            
+
+
+        </tbody>
+        
+    </table>
+
+</body>
+</html>
