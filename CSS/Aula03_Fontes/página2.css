@@ -1,0 +1,32 @@
+/* Uma pseudo-classe é uma palavra chave adicionada a seletores que especifica um estado especial do elemento selecionado*/
+
+
+
+
+.bx1{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    color: antiquewhite;
+}
+
+/*Muda a cor do fundo quando o usuario passa o mouse*/
+
+.bx1:hover{
+    background-color: chocolate;
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    padding-left: 30px;
+}
+button:hover{
+    background-color: aqua;
+}
+div > p {
+    display: none;
+}
+
+div:hover > p{
+    display: inline;
+    color: aqua;
+}
