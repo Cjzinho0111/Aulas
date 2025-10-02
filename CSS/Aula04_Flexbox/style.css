@@ -1,0 +1,33 @@
+.container {
+    background-color: aquamarine;
+    /*Cor de fundo*/
+    display: flex;
+    /*Ativa o flexbox, transforma a caixa no flexbox*/
+    height: 500px;
+    flex-direction: row;
+    gap: 20px;
+    /*Ele é o espaçamento entre os itens que tem entre os itens dentro de um flex*/
+    justify-content: space-evenly;
+    /* Alinhamento horizontal dos itens*/
+    /*justify content: variações center = alinhamento centralizado no eixo pricipal.
+    Flex-end = alinhamento no final do eixo principal 
+    Flex-start = alinhamento no começo do eixo principal
+    Space-between = alinhamento e espaçamento entre os itens
+    Space-around = define o espaçamento na esquerda e na direita/ ao redor do item
+    Space-evenly = espaçamento igual tanto pra borda quanto dos itens
+    */
+    align-items: stretch;
+    /*Alinhamento do eixo transversal*/
+    /*Align-itens: flex-start = Joga os itens no inicio, mesmo se você virar a caixa
+    /*Align-itens: flex-end = Joga os itens no final, mesmo se você virar a caixa
+    /*Align-itens: stretch = Ele estica o tamanho da "caixa"
+*/
+}
+
+.item {
+    border: 1px solid black;
+    /*Cor de fundo*/
+
+    /*Ele se adapta a cada item, para cada um ter o seu tamanho*/
+    padding: 30px;
+}
