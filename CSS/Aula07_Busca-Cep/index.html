@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Cep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Container é o conteúdo principal-->
+    <main class="container">
+        <h1>Busca de CEP</h1>
+
+        <form action="text" id="form-CEP"> <!--Formulário-->
+            <!--Input do site/  required é quando é necessário tal função/  maxlength é o número máxio de caracteres-->
+            <!--Pattern= Pede pra ele validar, se os números foram ultilizados, ao invés de letras-->
+            <input type="text" id="input-cep" placeholder="Digite o CEP (Somente números)" required maxlength="8"
+                pattern="\d{8}">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="resultado" class="resultado">
+            
+        </div>
+    </main>
+
+</body>
+
+</html>

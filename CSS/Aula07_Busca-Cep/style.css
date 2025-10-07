@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Reset básico*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: beige;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: aquamarine;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#form-CEP{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 12px 15px;
+}
