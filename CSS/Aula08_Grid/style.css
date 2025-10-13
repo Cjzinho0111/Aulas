@@ -1,0 +1,53 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: rgb(107, 107, 110);
+}
+
+/* Caixa principal */
+.container {
+    /* Ativa o modo grid no container */
+    display: grid;
+    /* Define o tamanho que as colunas tem */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Define o tamanho da linha */
+    grid-template-rows: auto auto auto auto;
+    border: 3px solid black;
+    height: 100vh;
+    align-content: start;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer"
+    ;
+    gap: 10px;
+}
+
+
+.header{
+    grid-area: header; /*Liga o elemento ao nome "header" definido no template*/
+    background-color: aquamarine;
+}
+
+
+.content1{
+grid-area: content1;
+background-color: blue;
+}
+
+.footer{
+grid-area: footer;
+background-color: blue;
+}
+
+.content2{
+    grid-area: content2;
+background-color: blue;
+}
+
+.content3{
+    grid-area: content3;
+    background-color: blue;
+}
