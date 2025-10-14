@@ -1,0 +1,142 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo corpo da página */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    scroll-behavior: smooth;
+    /*scroll suave ao clicar em ancoras*/
+    transition: all 0.5s ease;
+    /*Transição para a mudança de estilos*/
+    background-color: aqua;
+
+}
+
+/* Mexendo no header que está com o "h1 e paragrafo" */
+.cabeçalho {
+    background-color: rgb(4, 148, 192);
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    /* Fixar o header ao rolar*/
+    top: 0;
+    /* distancia do topo*/
+    z-index: 10;
+    /* Fica em cima de todos os elementos*/
+}
+
+.cabeçalho h1 {
+    color: cyan;
+    margin-bottom: 8px;
+    /* margin só pra parte debaixo do elemento */
+}
+
+.cabeçalho p {
+    color: rgb(5, 33, 158);
+    margin-bottom: 8px;
+}
+
+/* Container principal como grid */
+.container {
+    display: grid;
+    gap: 20px;
+    padding: 40px 20px;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Estilo dos cards */
+.card {
+    display: flex;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 150px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+
+/* =====================
+    📱 Mobile (Até 600px)
+    =====================*/
+
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(6, 158, 39);
+    }
+
+    .cabeçalho {
+        background-color: rgb(10, 198, 0.2);
+    }
+
+    .card {
+        color: rgb(5, 30, 56);
+    }
+
+    header h1::after {
+        content: "(Mobile)";
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        /*Ele vai transformar o grid com uma coluna*/
+    }
+
+}
+
+/* =====================
+    📱 Tablet (601px a 1024px)
+    =====================*/
+
+@media(min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: rgb(248, 9, 9);
+    }
+
+    .cabeçalho {
+        background-color: rgb(99, 5, 5);
+    }
+
+    .card {
+        color: rgb(22, 1, 1);
+    }
+
+    header h1::after {
+        content: "(Tablet)";
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        /*Ele vai transformar o grid com uma coluna*/
+    }
+}
+
+/* =====================
+    📱 Desktop (A partir de 1025px)
+    =====================*/
+
+    @media(min-width: 1025px){
+        body {
+            background-color: hsl(130, 94%, 50%);
+        }
+        .card {
+            color: hsl(253, 100%, 50%);
+        }
+        header h1::after {
+            content: "(Desktop)";
+        }
+    
+        .container {
+            grid-template-columns: repeat(4, 1fr);
+            /*Ele vai transformar o grid com uma coluna*/
+        }
+    }
